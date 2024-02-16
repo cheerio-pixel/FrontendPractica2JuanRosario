@@ -1,0 +1,70 @@
+
+.center-v {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center-h {
+    display: flex;
+    flex-wrap: wrap; /* Optional. only if you want the items to wrap */
+    justify-content: center; /* For horizontal alignment */
+    align-items: center; /* For vertical alignment */
+}
+
+.text-danger {
+    /* color: #DC3545; */
+    opacity: 1;
+    !important;
+}
+
+.danger {
+    opacity: 1;
+    !important;
+    color: red;
+}
+
+
+/* I don't have a better name */
+.search-table tr {
+    transition: background-color 0.3s ease; /* Adjust the duration and timing function as needed */
+}
+
+.search-table tr:hover:not(.search-table-selected) {
+    background-color: #ffffb3 !important;
+    cursor: pointer;
+}
+
+.search-table tr:not(:hover) {
+    background-color: initial; /* Set the initial background color when not hovered */
+}
+
+
+.search-table th:not(.index_name) {
+    background-color: #ADD8E6; color: black;
+}
+
+.search-table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+.search-table td, th {
+    border: 0.2px solid black; border-style: double;
+}
+
+
+.search-table .static table {
+    border-spacing: 0px; border-collapse: separate; border: 1px solid black;
+}
+
+.search-table-selected {
+    background-color: #9DBEF2 !important;
+}
+
+.box {
+  /* Optional: Add styles for the individual boxes */
+  /* border: 1px solid #000; */
+  padding: 10px;
+}
